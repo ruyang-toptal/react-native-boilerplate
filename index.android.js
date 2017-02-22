@@ -23,9 +23,8 @@ export default class liwwa extends Component {
           To get started, edit index.android.js
         </Text>
         <Text style={styles.instructions}>
-          Double tap R on your keyboard to reload,{'\n'}
-          Shake or press menu button for dev menu.{'\n'}
-          This doesn't work if you're running app in release mode. 
+          When new update is available and downloaded, {'\n'}
+          I will show you ANNOYING popup.
         </Text>
       </View>
     );

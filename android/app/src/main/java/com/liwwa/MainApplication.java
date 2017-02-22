@@ -10,6 +10,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 import com.pushlink.android.PushLink;
+import com.pushlink.android.StrategyEnum;
 
 import java.util.Arrays;
 import java.util.List;
@@ -40,5 +41,6 @@ public class MainApplication extends Application implements ReactApplication {
     super.onCreate();
     SoLoader.init(this, /* native exopackage */ false);
     PushLink.start(this,R.drawable.notification_template_icon_bg,"sr9nn57d3251e5qg",Installation.id(this));
+    PushLink.setCurrentStrategy(StrategyEnum.ANNOYING_POPUP);
   }
 }
