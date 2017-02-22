@@ -26,6 +26,7 @@
         </intent-filter>
       </activity>
       <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+      <provider android:name="com.pushlink.android.FileProvider" android:authorities="com.pushlink.sample" android:exported="true" />
     </application>
 
 </manifest>
