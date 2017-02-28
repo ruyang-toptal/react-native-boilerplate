@@ -11,7 +11,7 @@ import {
 import DemoView from './app/components/DemoView';
 import codePush from 'react-native-code-push';
 
-let codePushOptions = { checkFrequency: codePush.CheckFrequency.MANUAL };
+let codePushOptions = { checkFrequency: codePush.CheckFrequency.ON_APP_RESUME };
 
 
 class liwwa extends Component {
@@ -20,5 +20,5 @@ class liwwa extends Component {
   }
 }
 
-export default codePush(liwwa);
+export default codePush(codePushOptions)(liwwa);
 AppRegistry.registerComponent('liwwa', () => liwwa);

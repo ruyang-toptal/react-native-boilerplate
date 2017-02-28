@@ -27,7 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     // bundle location from on each app start
     @Override
     protected String getJSBundleFile() {
-      return CodePush.getJSBundleFile();
+      return CodePush.getBundleUrl();
     }
 
     @Override
