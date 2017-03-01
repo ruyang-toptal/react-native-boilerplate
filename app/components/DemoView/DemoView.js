@@ -11,6 +11,11 @@ export default class DemoView extends Component {
 		super()
 		this.state = {name:'Samer'}
 	}
+
+	componentDidMount: function() {
+	    CodePush.sync({installMode: CodePush.InstallMode.ON_NEXT_RESUME});
+	}
+
 	render() {
     return (
       <View style={styles.container}>
@@ -41,7 +46,7 @@ export default class DemoView extends Component {
         <Text style={styles.conclusion}>
         {`${this.state.name} likes ${this.state.favorite || "___"} because ${this.state.reason || "___"}.`}
         </Text>
-        <Text>I recommend CODEPUSH.</Text>
+        <Text>I recommend codepush.</Text>
         <Text>Because apple a day keeps doctor away.</Text>
       </View>
     );

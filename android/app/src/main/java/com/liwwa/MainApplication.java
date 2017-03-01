@@ -37,7 +37,7 @@ public class MainApplication extends Application implements ReactApplication {
       // have it, you can run "code-push deployment ls <appName> -k" to retrieve your key.
       return Arrays.<ReactPackage>asList(
               new MainReactPackage(),
-              new CodePush("deployment-key-here", MainApplication.this, BuildConfig.DEBUG)
+              new CodePush(BuildConfig.CODEPUSH_KEY, MainApplication.this, BuildConfig.DEBUG)
       );
     }
   };

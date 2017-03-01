@@ -114,10 +114,18 @@ android {
         }
     }
     buildTypes {
+        debug {
+            // CodePush updates should not be tested in Debug mode
+        }
+        releaseStaging {
+            buildConfigField "String", "ogcIo32NdWZ3u5ahv94ZoKXW3xAbE1BuH3OYf", '"<mvpPXuBhHDbneHYBbwn-Xmtb-NkkE1BuH3OYf>"'
+        }
+
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
             signingConfig signingConfigs.release
+            buildConfigField "String", "ogcIo32NdWZ3u5ahv94ZoKXW3xAbE1BuH3OYf", '"l991T2AIQbg4WOURT64sWmb8R8DeE1BuH3OYf"'
         }
     }
     // applicationVariants are e.g. debug, release
