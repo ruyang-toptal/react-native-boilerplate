@@ -4,6 +4,7 @@ import {
 	TextInput,
   View
 } from 'react-native';
+import CodePush from 'react-native-code-push';
 import styles from './styles.js'
 
 export default class DemoView extends Component {
@@ -12,7 +13,7 @@ export default class DemoView extends Component {
 		this.state = {name:'Samer'}
 	}
 
-	componentDidMount: function() {
+	componentDidMount() {
 	    CodePush.sync({installMode: CodePush.InstallMode.ON_NEXT_RESUME});
 	}
 
@@ -46,7 +47,7 @@ export default class DemoView extends Component {
         <Text style={styles.conclusion}>
         {`${this.state.name} likes ${this.state.favorite || "___"} because ${this.state.reason || "___"}.`}
         </Text>
-        <Text>I recommend codepush.</Text>
+        <Text>I recommend banana.</Text>
         <Text>Because apple a day keeps doctor away.</Text>
       </View>
     );
