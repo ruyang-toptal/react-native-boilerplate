@@ -10,7 +10,7 @@ import styles from './styles.js'
 export default class DemoView extends Component {
 	constructor() {
 		super()
-		this.state = {name:'Samer'}
+		this.state = {name:'Liwwa'}
 	}
 
 	componentDidMount() {
@@ -47,7 +47,7 @@ export default class DemoView extends Component {
         <Text style={styles.conclusion}>
         {`${this.state.name} likes ${this.state.favorite || "___"} because ${this.state.reason || "___"}.`}
         </Text>
-        <Text>I recommend banana.</Text>
+        <Text>I recommend apple.</Text>
         <Text>Because apple a day keeps doctor away.</Text>
       </View>
     );
