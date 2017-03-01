@@ -10,7 +10,7 @@ import styles from './styles.js'
 export default class DemoView extends Component {
 	constructor() {
 		super()
-		this.state = {name:'Liwwa'}
+		this.state = {name:'Samer'}
 	}
 
 	componentDidMount() {
